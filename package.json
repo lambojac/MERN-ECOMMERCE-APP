@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "description": "ecommerce rest api",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node server.js",
-    "server":"nodemon server.js"
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "kehinde adamo",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
+    "dotenv": "^16.4.1",
     "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "morgan": "^1.10.0",
     "nodemon": "^3.0.3"
   }
 }
