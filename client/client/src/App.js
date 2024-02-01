@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
     <div>
-    ecommerce
+    ecommerce website 
     </div>
     </div>
   );
