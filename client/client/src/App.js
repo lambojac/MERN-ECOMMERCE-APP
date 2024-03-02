@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
     <div>
-    ecommerce website 
+    mern stack ecommerce website
     </div>
     </div>
   );
