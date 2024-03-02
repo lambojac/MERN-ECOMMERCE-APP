@@ -1,12 +1,10 @@
 
 import './App.css';
-
+import Layout from "./components/Layout/Layout.js"
 function App() {
   return (
     <div className="App">
-    <div>
-    mern stack ecommerce website
-    </div>
+   <Layout>ecommerce website</Layout>
     </div>
   );
 }
