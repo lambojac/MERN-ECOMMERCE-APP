@@ -1,0 +1,21 @@
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    list-style-type: none;
+    position:relative;
+    left:30rem;
+    gap:1rem;
+    text-decoration: solid;
+    margin-bottom:450px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar-brand{
+    text-decoration: none;
+    position:relative;
+    left:-430px;
+    
+}
+
