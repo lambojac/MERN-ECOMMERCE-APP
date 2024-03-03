@@ -1,56 +1,49 @@
+// Header.js
+
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { GiShoppingBag } from "react-icons/gi";
-import "./Header.css"
+import { FaCartArrowDown } from "react-icons/fa";
+import "./Header.css";
 
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="nav">
-            <Link to="/" className="navbar-brand">
-               Ecommerce App
+      <nav className="navbar bg-body-tertiary">
+        <div className="container">
+          <div className="brand">
+            <FaCartArrowDown/>
+            <Link to="/" className="navbar-link">
+              Ecommerce App
             </Link>
-            <ul className="navbar">
-              <li className="nav-item">
-                <NavLink to="/" className="nav-link ">
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/category" className="nav-link ">
-                  Category
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/register" className="nav-link">
-                  Register
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/login" className="nav-link">
-                  Login
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/cart" className="nav-link">
-                  Cart (0)
-                </NavLink>
-              </li>
-            </ul>
           </div>
+          <ul className="nav-links">
+            <li>
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/category" className="nav-link">
+                Category
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/register" className="nav-link">
+                Register
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/login" className="nav-link">
+                Login
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/cart" className="nav-link">
+                Cart (0)
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </nav>
     </>
