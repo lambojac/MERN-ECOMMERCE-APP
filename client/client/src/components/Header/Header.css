@@ -8,7 +8,7 @@ body {
   .navbar {
     background-color: #f0f0f0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    padding: 0px 0;
   }
   .navbar-link{
     text-decoration: none;
