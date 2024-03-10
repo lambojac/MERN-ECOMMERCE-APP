@@ -10,7 +10,7 @@ const Layout = ({children, content, description, keywords, author}) => {
                 <meta name="description" content={description}/>
                 <meta name="keywords" content={keywords}/>
                 <meta name="author" content={author}/>
-                <title>My Title</title>
+                <title>{title}</title>
       </Helmet>
         <Header/>
         <main style={{minHeight:"80vh"}}>{children}</main>
@@ -19,4 +19,9 @@ const Layout = ({children, content, description, keywords, author}) => {
   )
 }
 
+Layout.defaultProps={
+  title:"Ecommerce-app",
+  description:"This is an ecommerce app",
+  keywords:" ecommerce, mernecommerce"
+}
 export default Layout
