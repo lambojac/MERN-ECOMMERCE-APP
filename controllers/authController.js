@@ -9,7 +9,7 @@ const{name, email, password, phone, address}=req.body
 
 //validations
 if(!name){
-    return res.send({error:"Name is required"})
+    return res.send({error:"enter your name"})
 }
 if(!email){
     return res.send({error:"Email is required"})
